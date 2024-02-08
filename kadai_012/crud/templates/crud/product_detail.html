@@ -10,6 +10,9 @@
          <tr>
              <th>商品名</th>
              <th>価格</th>
+             <th>カテゴリ</th>
+             <th>商品画像</th>
+             <th>商品詳細の説明</th>
              
          </tr>
      </thead>
@@ -17,7 +20,9 @@
      <tr>
          <td>{{ object.name }}</td>
          <td>{{ object.price }} 円</td>
-         
+         <td>{{ object.category }}</td>
+         <td><img src="{{ object.img.url }}" alt="{{ object.name }}" style="width:100px; height:auto;"></td>
+         <td>{{ object.description }}</td>
      </tr>
      
  </table>
